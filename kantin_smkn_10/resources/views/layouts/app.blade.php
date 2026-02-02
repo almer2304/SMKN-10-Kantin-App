@@ -110,7 +110,7 @@
                                     @if(auth()->user()->isCustomer())
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">
-                                            <i class="fas fa-wallet"></i> Saldo: Rp {{ number_format(auth()->user()->wallet_balance, 0, ',', '.') }}
+                                            <i class="fas fa-wallet"></i> Saldo: Rp {{ number_format(auth()->user()->wallet_balance(), 0, ',', '.') }}
                                         </a>
                                     @endif
                                     <div class="dropdown-divider"></div>
